@@ -3,6 +3,8 @@ package com.ankit.twitter.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +29,7 @@ public class Tweets {
     private String image;
     private String video;
     private boolean isReply;
-    private boolean isTweet;
+    private boolean       isTweet;
+    private LocalDateTime createdDate;
 
 }
